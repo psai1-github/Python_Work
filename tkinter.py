@@ -9,10 +9,11 @@ a.config(bg="silver")
 
 
 def clicked():
-  print("Clicked")
+  print(name.get())
 
 
 
 #Wigits
-Label(a,bg="blue",fg="red").pack()
-Button(a,bg="blue",fg="red",command=clicked).pack()
+Label(a,text="Name"bg="blue",fg="red").pack()
+Button(a,text="Clicked"bg="blue",fg="red",command=clicked).pack()
+name=Entry().pack()
